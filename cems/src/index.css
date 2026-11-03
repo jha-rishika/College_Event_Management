@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html, body, #root { min-height: 100%; }
+  body { @apply bg-sky font-sans text-ink antialiased; }
+  * { border-color: #d3e2f2; }
+  ::selection { background: #ff2a7f; color: #fff; }
+}
+@layer components {
+  .field { @apply w-full rounded-md border border-line bg-white px-3 py-2 text-sm text-ink placeholder:text-ink-mute focus:border-wine focus:outline-none focus:ring-2 focus:ring-pink/25; }
+  .label { @apply mb-1 block text-xs font-semibold uppercase tracking-wide text-ink-soft; }
+}
